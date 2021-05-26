@@ -1,0 +1,17 @@
+body{
+    background:rgb(255, 171, 171);
+}
+#titleDiv{
+    display:flex;
+    padding:10px;
+    border: 1px solid black;
+}
+#title{
+    color:white;
+    font-size: 50px;
+    font-family: arial;
+}
+#container{
+    border: 1px solid black;
+    
+}
