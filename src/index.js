@@ -22,8 +22,7 @@ async function getCurrentWeatherData(location){
             
         })
 }
-let weatherData = getCurrentWeatherData('Toronto')
-console.log(weatherData);
+
 
 async function getForecast(location){
     fetch(`api.openweathermap.org/data/2.5/forecast/daily?q=${location}&cnt=7&appid=${openWeatherCurrentKey}`)
@@ -33,8 +32,15 @@ async function getForecast(location){
             console.log(data)
         })
 }
-
-
+const input = document.getElementById('search');
+const searchButton = document.getElementById('searchButton');
+searchButton.addEventListener('click', function(){ 
+    let location = input.value;
+    getCurrentWeatherData(location);
+})
+    
+let weatherData = getCurrentWeatherData(input.value)
+console.log(weatherData);
 
 
 

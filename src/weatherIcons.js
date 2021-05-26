@@ -1,6 +1,6 @@
 export function displayImage(weather, container, description){
-    const weatherImage = document.createElement('img');
-    const ImageHolder = document.createElement('div');
+    const weatherImage = document.getElementById('icon');
+    const ImageHolder = document.getElementById('iconDiv');
     if(weather == 'Thunderstorm'){
         weatherImage.src = './Icons/thunderstorm.png';
     }
@@ -23,8 +23,8 @@ export function displayImage(weather, container, description){
         weatherImage.src = './Icons/haze.png';
     }
     container.appendChild(weatherImage);
-    weatherImage.setAttribute('id', 'weatherImage');
-    ImageHolder.setAttribute('id', 'weatherImageHolder'); 
+    weatherImage.setAttribute('id', 'icon');
+    ImageHolder.setAttribute('id', 'iconDiv'); 
     ImageHolder.textContent = description;
     container.appendChild(ImageHolder);
 }

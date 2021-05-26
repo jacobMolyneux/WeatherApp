@@ -1,13 +1,24 @@
 body{
-    background:rgb(255, 255, 255);
+    background:rgb(104, 177, 245);
+}
+#search{
+    margin: 20px;
+    width: 500px;
+    border-radius: 10px;
+    height: 30px; 
+    font-size: 20px;
+
 }
 #titleDiv{
     display:flex;
+    align-items: center;
     padding:10px;
     border: 1px solid black;
+    background:white;
 }
 #title{
-    color:rgb(0, 132, 255);
+    color:rgb(104, 177, 245);
+    align-items: center;
     font-size: 50px;
     font-family: arial;
 }
@@ -18,9 +29,10 @@ body{
 }
 #location{
     font-size: 75px;
+    color: black;
 }
 #temperature{
-    color: rgb(0, 132, 255);
+    color: rgb(104, 177, 245);
     font-size: 48px;
 }
 #details{
@@ -39,18 +51,31 @@ body{
 }
 #currentWeatherDisplayDiv{
     position: relative;
-    border: 1px solid rgb(0, 132, 255);
+    background: white;
+    align-items: center;
     height: 300px; 
     width: 500px; 
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 3px 3px rgb(0, 132, 255);
-    border-radius: 4px;
-    left: 40px;
+    box-shadow: 5px 5px rgb(245, 132, 104);
+    /* border-radius: 4px; */
+    left: 10%;
 }
-#weatherImage{
-    border: 1px black solid;
-    height: 50px;
-    width: 50px;
+
+#icon{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+#locationDiv{
+    align-items: center;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+#searchButton{
+    width: 75px;
+    height: 33px;
 }
