@@ -49,3 +49,8 @@ body{
     border-radius: 4px;
     left: 40px;
 }
+#weatherImage{
+    border: 1px black solid;
+    height: 50px;
+    width: 50px;
+}

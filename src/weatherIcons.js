@@ -7,7 +7,7 @@ export function displayImage(weather, container, description){
     else if(weather == 'Drizzle'){
         weatherImage.src = './Icons/RainImage.png';
     }
-    else if(weather = 'Rain'){
+    else if(weather == 'Rain'){
         weatherImage.src = './Icons/RainImage.png';
     }
     else if (weather == 'Snow'){
@@ -22,9 +22,9 @@ export function displayImage(weather, container, description){
     else{
         weatherImage.src = './Icons/haze.png';
     }
-    ImageHolder.appendChild(weatherImage);
-    weatherImage.setAttribute('Id', 'weatherImage');
+    container.appendChild(weatherImage);
+    weatherImage.setAttribute('id', 'weatherImage');
     ImageHolder.setAttribute('id', 'weatherImageHolder'); 
-    imageHolder.textContent = description;
-    container.append(ImageHolder);
+    ImageHolder.textContent = description;
+    container.appendChild(ImageHolder);
 }

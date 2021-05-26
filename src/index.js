@@ -17,12 +17,12 @@ async function getCurrentWeatherData(location){
             createDisplay(temperature, location, humidity, maxTemp, minTemp, unit);
             let description = data.weather[0]['description']
             let weather = data.weather[0]['main'];
-            displayImage(weather, document.getElementById('currentWeatherDisplayDiv'), description); 
-            console.log(icon);
-            console.log(description);
+            let container = document.getElementById('currentWeatherDisplayDiv');
+            displayImage(weather, container, description); 
+            
         })
 }
-let weatherData = getCurrentWeatherData('seattle')
+let weatherData = getCurrentWeatherData('Toronto')
 console.log(weatherData);
 
 async function getForecast(location){
