@@ -1,0 +1,51 @@
+body{
+    background:rgb(255, 255, 255);
+}
+#titleDiv{
+    display:flex;
+    padding:10px;
+    border: 1px solid black;
+}
+#title{
+    color:rgb(0, 132, 255);
+    font-size: 50px;
+    font-family: arial;
+}
+#container{
+    border: 1px solid black;
+    height: 1000px;
+    
+}
+#location{
+    font-size: 75px;
+}
+#temperature{
+    color: rgb(0, 132, 255);
+    font-size: 48px;
+}
+#details{
+    display: flex;
+    padding: 10px;
+}
+.weatherDetail{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-family: arial;
+    border-right: 1px solid black;
+    
+}
+#maxTemp{
+    border-left: 1px solid black;
+}
+#currentWeatherDisplayDiv{
+    position: relative;
+    border: 1px solid rgb(0, 132, 255);
+    height: 300px; 
+    width: 500px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 3px 3px rgb(0, 132, 255);
+    border-radius: 4px;
+    left: 40px;
+}
