@@ -1,6 +1,7 @@
 import {createDisplay} from './createElements.js'
 import {displayImage} from './weatherIcons.js'
-// import getForecast from './forecast.js'
+import {getForecast, createForecastDisplay} from './forecast.js'
+
 const openWeatherCurrentKey = '993f916fa6417076b75a3735eeb0d504'
 const forecastKey = '0bfbf232452b808462e3a41a14932041'
 async function getCurrentWeatherData(location){
@@ -25,17 +26,7 @@ async function getCurrentWeatherData(location){
 }
 
 
-async function getForecast(location){
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=535d7af435ce4a459f381902212605&q=${location}&days=7&aqi=no&alerts=no`)
-        .then(res => res.json())
-        .then(data => {
-            console.log("forecast Date:")
-            console.log(data)
-            console.log('the forcast data is: '+ data);
-            let date = data.forecast['forecastday']['0']['day'];
-            console.log('the data for a single day is :' + date);
-        })
-}
+
 const input = document.getElementById('search');
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', function(){ 
