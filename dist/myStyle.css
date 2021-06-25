@@ -96,3 +96,15 @@ body {
 #forecastRoot {
   padding: 10px;
 }
+.forecastdata {
+  font-size: 20px;
+  color: rgb(160, 160, 255);
+  padding: 10px;
+}
+#forecastDateDisplay {
+  border-bottom: 1px solid rgb(160, 160, 255);
+  width: 280px;
+  border-radius: 5px;
+  text-align: center;
+  background: rgb(160, 160, 255);
+}

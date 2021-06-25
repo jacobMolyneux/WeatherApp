@@ -5,20 +5,25 @@ class day {
     this.avgTemp = avgTemp;
     this.date = date;
   }
+
   displayInfo(parentNode) {
     let container = document.createElement("div");
     container.className = "forecastContainer";
     let avgTempDisplay = document.createElement("div");
     avgTempDisplay.setAttribute("id", "AvgTempForecastDisplay");
-    avgTempDisplay.textContent = this.avgTemp;
+    avgTempDisplay.textContent = `Average Temp: ${this.avgTemp}`;
     let minTempDisplay = document.createElement("div");
     minTempDisplay.setAttribute("id", "forecastDetail");
-    minTempDisplay.textContent = this.minTemp;
+    minTempDisplay.textContent = `Min Temp: ${this.minTemp}`;
     let maxTempDisplay = document.createElement("div");
     maxTempDisplay.setAttribute("id", "forecastDetail");
-    maxTempDisplay.textContent = this.maxTemp;
+    maxTempDisplay.textContent = `Max Temp: ${this.maxTemp}`;
     let dateDisplay = document.createElement("div");
     dateDisplay.setAttribute("id", "forecastDateDisplay");
+    dateDisplay.classList = "forecastdata";
+    minTempDisplay.classList = "forecastdata";
+    maxTempDisplay.classList = "forecastdata";
+    avgTempDisplay.classList = "forecastdata";
     dateDisplay.textContent = this.date;
     container.appendChild(dateDisplay);
     container.appendChild(avgTempDisplay);
