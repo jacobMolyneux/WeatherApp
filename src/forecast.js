@@ -7,18 +7,24 @@ class day {
   }
   displayInfo(parentNode) {
     let container = document.createElement("div");
+    container.className = "forecastContainer";
     let avgTempDisplay = document.createElement("div");
+    avgTempDisplay.setAttribute("id", "AvgTempForecastDisplay");
     avgTempDisplay.textContent = this.avgTemp;
     let minTempDisplay = document.createElement("div");
+    minTempDisplay.setAttribute("id", "forecastDetail");
     minTempDisplay.textContent = this.minTemp;
     let maxTempDisplay = document.createElement("div");
+    maxTempDisplay.setAttribute("id", "forecastDetail");
     maxTempDisplay.textContent = this.maxTemp;
     let dateDisplay = document.createElement("div");
+    dateDisplay.setAttribute("id", "forecastDateDisplay");
     dateDisplay.textContent = this.date;
+    container.appendChild(dateDisplay);
     container.appendChild(avgTempDisplay);
     container.appendChild(maxTempDisplay);
     container.appendChild(minTempDisplay);
-    container.appendChild(dateDisplay);
+
     parentNode.appendChild(container);
   }
 }
