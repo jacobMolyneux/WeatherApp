@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/jacobMolyneux/WeatherApp/issues"
   },
-  "homepage": "https://github.com/jacobMolyneux/WeatherApp#index.html",
+  "homepage": "https://github.com/jacobMolyneux/WeatherApp#readme",
   "devDependencies": {
     "gh-pages": "^3.2.3",
     "webpack": "^5.37.1",
