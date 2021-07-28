@@ -6,7 +6,7 @@ const openWeatherCurrentKey = "993f916fa6417076b75a3735eeb0d504";
 const forecastKey = "0bfbf232452b808462e3a41a14932041";
 async function getCurrentWeatherData(location) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${openWeatherCurrentKey}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${openWeatherCurrentKey}`
   )
     .then((res) => res.json())
     .then((data) => {

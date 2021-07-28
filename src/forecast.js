@@ -35,7 +35,7 @@ class day {
 }
 async function getForecast(location) {
   fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=535d7af435ce4a459f381902212605&q=${location}&days=7&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=535d7af435ce4a459f381902212605&q=${location}&days=7&aqi=no&alerts=no`
   )
     .then((res) => res.json())
     .then((data) => {
