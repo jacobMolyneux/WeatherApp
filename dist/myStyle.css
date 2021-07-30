@@ -7,12 +7,12 @@ body {
   border-radius: 10px;
   height: 30px;
   font-size: 20px;
+  border: 1px solid grey;
 }
 #titleDiv {
   display: flex;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid blue;
   background: white;
 }
 #title {
@@ -30,7 +30,6 @@ body {
   color: black;
 }
 #temperature {
-  color: rgb(255, 255, 255);
   font-size: 48px;
 }
 #details {
@@ -48,7 +47,8 @@ body {
 }
 #currentWeatherDisplayDiv {
   position: relative;
-  background: rgb(160, 160, 255);
+  border: 3px solid rgb(48, 46, 180);
+  border-radius: 5px;
   align-items: center;
   height: 400px;
   width: 500px;
@@ -57,6 +57,7 @@ body {
   text-align: center;
   /* border-radius: 4px; */
   left: 10%;
+  top: 10%;
   margin: 20px;
 }
 
@@ -74,13 +75,13 @@ body {
 #searchButton {
   width: 100px;
   height: 40px;
-  border: 2px solid rgb(160, 160, 255);
+  border: 2px solid rgb(48, 46, 180);
   border-radius: 4px;
   background: white;
-  color: rgb(160, 160, 255);
+  color: rgb(48, 46, 180);
 }
 .forecastContainer {
-  border: 1px solid rgb(160, 160, 255);
+  border: 1px solid rgb(48, 46, 180);
   border-radius: 5px;
   margin: 10px;
   align-items: center;
@@ -98,13 +99,14 @@ body {
 }
 .forecastdata {
   font-size: 20px;
-  color: rgb(160, 160, 255);
+  color: black;
   padding: 10px;
 }
 #forecastDateDisplay {
-  border-bottom: 1px solid rgb(160, 160, 255);
+  border-bottom: 1px solid rgb(48, 46, 180);
   width: 280px;
   border-radius: 5px;
   text-align: center;
-  background: rgb(160, 160, 255);
+  background: rgb(48, 46, 180);
+  color: white;
 }
