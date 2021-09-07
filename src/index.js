@@ -10,15 +10,12 @@ async function getCurrentWeatherData(location) {
   )
     .then((res) => res.json())
     .then((data) => {
-      console.log(data.main);
       let temperature = data.main["temp"];
       let feels_like = data.main["feels_like"];
       let maxTemp = data.main["temp_max"];
       let minTemp = data.main["temp_min"];
       let humidity = data.main["humidity"];
-      console.log(
-        `The Temperature is ${temperature} and feels like ${feels_like}. The Humidity is ${humidity}.`
-      );
+
       let unit = "C";
       createDisplay(temperature, location, humidity, maxTemp, minTemp, unit);
       let description = data.weather[0]["description"];
@@ -35,7 +32,8 @@ searchButton.addEventListener("click", function () {
   getCurrentWeatherData(location);
   getForecast(location);
 });
-
+getCurrentWeatherData("New York");
+getForecast("New York");
 let weatherData = getCurrentWeatherData(input.value);
 console.log(weatherData);
 let forecast = getForecast(input.value);

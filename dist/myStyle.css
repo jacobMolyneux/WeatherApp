@@ -23,7 +23,9 @@ body {
 #container {
   height: 600px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #location {
   font-size: 75px;
@@ -56,8 +58,7 @@ body {
   flex-direction: column;
   text-align: center;
   /* border-radius: 4px; */
-  left: 10%;
-  top: 10%;
+
   margin: 20px;
 }
 
@@ -96,6 +97,8 @@ body {
 }
 #forecastRoot {
   padding: 10px;
+  display: flex;
+  flex-direction: row;
 }
 .forecastdata {
   font-size: 20px;
