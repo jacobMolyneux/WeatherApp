@@ -1,0 +1,115 @@
+body {
+  background: rgb(255, 255, 255);
+}
+#search {
+  margin: 20px;
+  width: 500px;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 20px;
+  border: 1px solid grey;
+}
+#titleDiv {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: white;
+}
+#title {
+  align-items: center;
+  font-size: 35px;
+  font-family: arial;
+}
+#container {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#location {
+  font-size: 75px;
+  color: black;
+}
+#temperature {
+  font-size: 48px;
+}
+#details {
+  display: flex;
+  padding: 10px;
+}
+.weatherDetail {
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-family: arial;
+  border-right: 1px solid black;
+}
+#maxTemp {
+  border-left: 1px solid black;
+}
+#currentWeatherDisplayDiv {
+  position: relative;
+  border: 3px solid rgb(48, 46, 180);
+  border-radius: 5px;
+  align-items: center;
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* border-radius: 4px; */
+
+  margin: 20px;
+}
+
+#icon {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
+#locationDiv {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+#searchButton {
+  width: 100px;
+  height: 40px;
+  border: 2px solid rgb(48, 46, 180);
+  border-radius: 4px;
+  background: white;
+  color: rgb(48, 46, 180);
+}
+.forecastContainer {
+  border: 1px solid rgb(48, 46, 180);
+  border-radius: 5px;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+#forecastDateDisplay {
+  color: black;
+  font-size: 20px;
+}
+#forecastRoot {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.forecastdata {
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+}
+#forecastDateDisplay {
+  border-bottom: 1px solid rgb(48, 46, 180);
+  width: 280px;
+  border-radius: 5px;
+  text-align: center;
+  background: rgb(48, 46, 180);
+  color: white;
+}
